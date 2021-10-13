@@ -15,8 +15,16 @@
     request.setAttribute("list", list);
     %>
     
-    <table>
-    	<tr><th>ID</th><th>Nome</th><th>Sobrenome</th><th>Password</th><th>Email</th><th>Sexo</th><th>Pais</th></tr>
+    <table border="1">
+    	<tr>
+	    	<th>ID</th>
+	    	<th>Nome</th>
+	    	<th>Password</th>
+	    	<th>Email</th>
+	    	<th>Sexo</th>
+	    	<th>País</th>
+    	</tr>
+    	
     	
     	<c:forEach items="${list}" var="usuario">
     		<tr>

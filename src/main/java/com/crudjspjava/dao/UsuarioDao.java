@@ -38,6 +38,7 @@ public class UsuarioDao {
 				usuario.setId(rs.getInt("id"));
 				usuario.setNome(rs.getString("nome"));
 				usuario.setPassword(rs.getString("password"));
+				usuario.setEmail(rs.getString("email"));
 				usuario.setSexo(rs.getString("sexo"));
 				usuario.setPais(rs.getString("pais"));
 				list.add(usuario);
