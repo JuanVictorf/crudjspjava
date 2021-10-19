@@ -23,6 +23,8 @@
 	    	<th>Email</th>
 	    	<th>Sexo</th>
 	    	<th>País</th>
+	    	<th>Editar</th>
+	    	<th>Excluir</th>
     	</tr>
     	
     	
@@ -34,10 +36,14 @@
     			<td>${usuario.getEmail()}</td>
     			<td>${usuario.getSexo()}</td>
     			<td>${usuario.getPais()}</td>
+    			<td><a href="editform.jsp?id=${usuario.getId()}">Editar</a></td>
+    			<td><a href="#">Excluir</a></td>
     		</tr>
     	</c:forEach>
     	
     </table>
+    <br>
+    <a href="#">Adicionar novo usuário</a>
     
 </body>
 </html>
